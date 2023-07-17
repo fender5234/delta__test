@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <th>Показатель</th>
+          <th class="current-day">Текущий день</th>
+          <th>Вчера</th>
+          <th>Этот день недели</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Выручка,руб</td>
+            <td class="current-day">500 521</td>
+            <td>480 521 <span class="table-span">-4%</span></td>
+            <td>480 521</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Наличные</td>
+            <td class="current-day">300 000</td>
+            <td>300 000 <span class="table-span">-3%</span></td>
+            <td>300 000</td>
+          </tr>
+          <tr>
+            <td>Безналичный рассчет</td>
+            <td class="current-day">100 000</td>
+            <td>100 000 <span class="table-span">-3%</span></td>
+            <td>100 000</td>
+          </tr>
+          <tr>
+            <td>Кредитные карты</td>
+            <td class="current-day">100 521</td>
+            <td>100 521 <span class="table-span">-3%</span></td>
+            <td>100 521</td>
+          </tr>
+          <tr>
+            <td>Средний чек,руб</td>
+            <td class="current-day">1300</td>
+            <td class="to-up">900 <span class="table-span--up">+44%</span></td>
+            <td class="to-up">900</td>
+          </tr>
+          <tr>
+            <td>Средний гость,руб</td>
+            <td class="current-day">1200</td>
+            <td class="to-up">800 <span class="table-span--up">+45%</span></td>
+            <td class="to-up">800</td>
+          </tr>
+          <tr>
+            <td>Удаление из чека (после оплаты),руб</td>
+            <td class="current-day">1000</td>
+            <td class="to-down">1100 <span class="table-span">-10%</span></td>
+            <td class="to-up">900</td>
+          </tr>
+          <tr>
+            <td>Удаление из счета (после оплаты),руб</td>
+            <td class="current-day">1300</td>
+            <td>1300 <span class="table-span">-7%</span></td>
+            <td class="to-up">900</td>
+          </tr>
+          <tr>
+            <td>Количество чеков</td>
+            <td class="current-day">34</td>
+            <td>36 <span class="table-span">-5%</span></td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Количество гостей</td>
+            <td class="current-day">34</td>
+            <td>36 <span class="table-span">-5%</span></td>
+            <td>34</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
